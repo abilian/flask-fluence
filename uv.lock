@@ -724,6 +724,7 @@ dependencies = [
 [package.dev-dependencies]
 dev = [
     { name = "abilian-devtools" },
+    { name = "coverage" },
     { name = "snoop" },
 ]
 
@@ -737,6 +738,7 @@ requires-dist = [
 [package.metadata.requires-dev]
 dev = [
     { name = "abilian-devtools", specifier = ">=0.7.6" },
+    { name = "coverage", specifier = ">=7.6.12" },
     { name = "snoop", specifier = ">=0.6.0" },
 ]
 

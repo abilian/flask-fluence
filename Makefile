@@ -41,7 +41,9 @@ test-randomly:
 
 ## Lint / check typing
 lint:
-	adt check
+	ruff check src tests
+	flake8 src tests
+	mypy src tests
 
 
 #
