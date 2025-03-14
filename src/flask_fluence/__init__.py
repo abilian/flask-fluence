@@ -2,8 +2,8 @@
 
 from __future__ import annotations
 
+from .component import Component, component
 from .render import render_component
 from .templates import get_template
-from .component import Component, component
 
-__all__ = ["get_template", "render_component", "Component", "component"]
+__all__ = ["Component", "component", "get_template", "render_component"]

@@ -4,11 +4,14 @@ from __future__ import annotations
 
 import inspect
 from pathlib import Path
+from typing import TYPE_CHECKING
 
 from flask import current_app
-from jinja2 import Environment, Template
 
 from .lib.names import to_snake_case
+
+if TYPE_CHECKING:
+    from jinja2 import Environment, Template
 
 
 def get_template(obj) -> Template:
