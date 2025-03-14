@@ -1,16 +1,20 @@
 from __future__ import annotations
 
 from flask import Flask, render_template
-from flask_super import scan_package
+from flask_super import scan_package, register_commands
 
 from flask_fluence import render_component
 from flask_fluence.jinja_ext import ComponentTag
 
 scan_package("app")
+scan_package("flask_fluence.cli")
 
 
 def create_app() -> Flask:
     app = Flask(__name__)
+
+    # Register Flask-Super commands
+    register_commands(app)
 
     app.jinja_env.add_extension(ComponentTag)
 

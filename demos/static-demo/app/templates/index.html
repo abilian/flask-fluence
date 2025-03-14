@@ -7,7 +7,16 @@
 </head>
 
 <body>
+{% component "HelloWorld" %}{% endcomponent %}
+
+{% component "Hello" %}{% endcomponent %}
+
+{% component "Hello2" %}{% endcomponent %}
+
 {% component "Hello" %}
+  {% component "HelloWorld" %}{% endcomponent %}
+{% endcomponent %}
+
 </body>
 
 </html>
