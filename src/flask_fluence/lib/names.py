@@ -17,12 +17,18 @@ def dense_fqdn(cls: type) -> str:
 
 
 def to_snake_case(name: str) -> str:
-    """Convert CamelCase to snake_case >>> to_snake_case("CamelCase")
-    'camel_case'."""
+    """Convert CamelCase to snake_case
+
+    >>> to_snake_case("CamelCase")
+    'camel_case'
+    """
     return re.sub(r"(?<!^)(?=[A-Z])", "_", name).lower()
 
 
 def to_kebab_case(name: str) -> str:
-    """Convert CamelCase to kebab-case >>> to_kebab_case("CamelCase") 'camel-
-    case'."""
+    """Convert CamelCase to kebab-case
+
+    >>> to_kebab_case("CamelCase")
+    'camel-case'
+    """
     return re.sub(r"(?<!^)(?=[A-Z])", "-", name).lower()
