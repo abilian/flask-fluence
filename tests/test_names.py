@@ -1,6 +1,4 @@
-# Copyright (c) 2021-2024, Abilian SAS & TCA
-#
-# SPDX-License-Identifier: AGPL-3.0-only
+# Copyright (c) 2021-2025, Abilian SAS
 
 from __future__ import annotations
 
