@@ -3,7 +3,7 @@ from flask import Flask
 from flask_fluence.templates import get_template
 
 
-def test_get_template_embedded():
+def test_get_template_embedded() -> None:
     class Hello:
         template = "Hello world!"
 
@@ -15,8 +15,8 @@ def test_get_template_embedded():
         assert template
 
 
-def test_get_template_external():
-    from tests.components.hello import Hello  # noqa: PLC0415
+def test_get_template_external() -> None:
+    from tests.components.hello import Hello
 
     obj = Hello()
 

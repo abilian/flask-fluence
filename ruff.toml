@@ -1,5 +1,3 @@
-preview = true
-
 lint.select = [
     "ALL",
 ]
@@ -12,5 +10,6 @@ lint.extend-ignore = [
     #  More specific
     "S101", # Use of assert detected
     "CPY001", # Missing copyright header
-    "INP001", # Implicit package
+    # False positive, don't remove
+    "T201", # print found
 ]

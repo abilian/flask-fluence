@@ -3,7 +3,7 @@ from flask import Flask
 from flask_fluence.render import render_component
 
 
-def test_render_static():
+def test_render_static() -> None:
     class Hello:
         template = "Hello world!"
 
