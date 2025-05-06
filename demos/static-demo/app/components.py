@@ -1,4 +1,3 @@
-from devtools import debug
 
 from flask_fluence import Component, component
 

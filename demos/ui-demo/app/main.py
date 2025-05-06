@@ -6,7 +6,7 @@ from flask_super import register_commands, scan_package
 from flask_fluence import render_component
 from flask_fluence.jinja_ext import ComponentTag
 
-scan_package("app")
+scan_package("app.components")
 scan_package("flask_fluence.cli")
 
 

@@ -1,7 +1,7 @@
 from jinja2_simple_tags import ContainerTag
 
-from .render import render_component
 from .component import get_component
+from .render import render_component
 
 
 class ComponentTag(ContainerTag):
